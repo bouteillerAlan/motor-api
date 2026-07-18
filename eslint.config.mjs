@@ -1,5 +1,6 @@
 // @ts-check
 import eslint from '@eslint/js';
+import { jsdoc } from 'eslint-plugin-jsdoc';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
@@ -24,6 +25,21 @@ export default tseslint.config(
       },
     },
   },
+  jsdoc({
+    config: 'flat/recommended',
+    // rules: {
+    //   'jsdoc/require-jsdoc': ['error', {
+    //     checkConstructors: false,
+    //     require: {
+    //       FunctionDeclaration: true,
+    //       MethodDefinition: true,
+    //       ClassDeclaration: true,
+    //       ArrowFunctionExpression: false,
+    //       FunctionExpression: false,
+    //     },
+    //   }],
+    // },
+  }),
   {
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',

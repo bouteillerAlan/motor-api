@@ -1,4 +1,4 @@
-import { CreateDateColumn, UpdateDateColumn, PrimaryGeneratedColumn } from "typeorm";
+import { CreateDateColumn, UpdateDateColumn, PrimaryGeneratedColumn, VersionColumn } from "typeorm";
 
 export abstract class BaseEntity {
   @PrimaryGeneratedColumn("uuid")
@@ -9,4 +9,7 @@ export abstract class BaseEntity {
 
   @UpdateDateColumn()
   updatedAt: Date;
+
+  @VersionColumn()
+  version: number;
 }

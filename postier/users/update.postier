@@ -1,0 +1,97 @@
+{
+  "name": "PATCH@{{api_dev_url}}/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
+  "description": "",
+  "method": "PATCH",
+  "url": "{{api_dev_url}}/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": "{\n  \"name\": \"pouet\"\n}",
+  "bodyType": "json",
+  "query": {},
+  "headerEntries": [
+    {
+      "key": "Content-Type",
+      "value": "application/json",
+      "enabled": true
+    }
+  ],
+  "response": {
+    "statusCode": 200,
+    "status": "200 OK",
+    "headers": {
+      "Content-Length": [
+        "42"
+      ],
+      "Content-Type": [
+        "application/json; charset=utf-8"
+      ],
+      "Date": [
+        "Sat, 18 Jul 2026 21:32:11 GMT"
+      ],
+      "Etag": [
+        "W/\"2a-mp76xueJwuBg6SC3F/3HJjTMrec\""
+      ],
+      "X-Powered-By": [
+        "Express"
+      ]
+    },
+    "cookies": null,
+    "body": "{\"generatedMaps\":[],\"raw\":[],\"affected\":1}",
+    "size": 42,
+    "duration": 16988,
+    "raw": {
+      "method": "PATCH",
+      "url": "%7B%7Bapi_dev_url%7D%7D/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": "{\n  \"name\": \"pouet\"\n}"
+    },
+    "effective": {
+      "method": "PATCH",
+      "url": "http://localhost:3000/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": "{\n  \"name\": \"pouet\"\n}"
+    },
+    "trace": {
+      "logs": [
+        "[21:32:11.731Z] Preparing request to http://localhost:3000/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
+        "[21:32:11.731Z] PATCH http://localhost:3000/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
+        "[21:32:11.731Z] DNS lookup: localhost",
+        "[21:32:11.731Z] DNS lookup: localhost -\u003e ::1",
+        "[21:32:11.731Z] DNS lookup: localhost -\u003e 127.0.0.1",
+        "[21:32:11.731Z] Trying [::1]:3000... (tcp)",
+        "[21:32:11.731Z] Connected to localhost ([::1]:3000)",
+        "[21:32:11.747Z] HTTP/1.1 200 OK",
+        "[21:32:11.747Z] Request completed in 16 ms"
+      ],
+      "timings": [
+        {
+          "label": "DNS Lookup",
+          "duration": 0
+        },
+        {
+          "label": "TCP Connect",
+          "duration": 0
+        },
+        {
+          "label": "Waiting (TTFB)",
+          "duration": 16
+        },
+        {
+          "label": "Transfer",
+          "duration": 0
+        },
+        {
+          "label": "Total",
+          "duration": 16
+        }
+      ]
+    }
+  },
+  "createdAt": "2026-07-18T21:32:11.748Z",
+  "updatedAt": "2026-07-18T23:32:11.74867344+02:00"
+}

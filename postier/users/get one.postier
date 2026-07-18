@@ -1,0 +1,84 @@
+{
+  "name": "GET@{{api_dev_url}}/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
+  "description": "",
+  "method": "GET",
+  "url": "{{api_dev_url}}/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
+  "headers": {},
+  "body": "",
+  "bodyType": "none",
+  "query": {},
+  "response": {
+    "statusCode": 200,
+    "status": "200 OK",
+    "headers": {
+      "Content-Length": [
+        "149"
+      ],
+      "Content-Type": [
+        "application/json; charset=utf-8"
+      ],
+      "Date": [
+        "Sat, 18 Jul 2026 21:27:30 GMT"
+      ],
+      "Etag": [
+        "W/\"95-3u1Jq2czXr64tPnNVDHdp4nNI90\""
+      ],
+      "X-Powered-By": [
+        "Express"
+      ]
+    },
+    "cookies": null,
+    "body": "{\"id\":\"2cd35924-2815-4cf1-b375-f7f262b398a0\",\"createdAt\":\"2026-07-18T19:15:54.844Z\",\"updatedAt\":\"2026-07-18T19:15:54.844Z\",\"version\":1,\"name\":\"test\"}",
+    "size": 149,
+    "duration": 10715,
+    "raw": {
+      "method": "GET",
+      "url": "%7B%7Bapi_dev_url%7D%7D/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
+      "headers": {},
+      "body": ""
+    },
+    "effective": {
+      "method": "GET",
+      "url": "http://localhost:3000/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
+      "headers": {},
+      "body": ""
+    },
+    "trace": {
+      "logs": [
+        "[21:27:30.306Z] Preparing request to http://localhost:3000/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
+        "[21:27:30.306Z] GET http://localhost:3000/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
+        "[21:27:30.306Z] DNS lookup: localhost",
+        "[21:27:30.306Z] DNS lookup: localhost -\u003e ::1",
+        "[21:27:30.306Z] DNS lookup: localhost -\u003e 127.0.0.1",
+        "[21:27:30.306Z] Trying [::1]:3000... (tcp)",
+        "[21:27:30.306Z] Connected to localhost ([::1]:3000)",
+        "[21:27:30.316Z] HTTP/1.1 200 OK",
+        "[21:27:30.316Z] Request completed in 10 ms"
+      ],
+      "timings": [
+        {
+          "label": "DNS Lookup",
+          "duration": 0
+        },
+        {
+          "label": "TCP Connect",
+          "duration": 0
+        },
+        {
+          "label": "Waiting (TTFB)",
+          "duration": 10
+        },
+        {
+          "label": "Transfer",
+          "duration": 0
+        },
+        {
+          "label": "Total",
+          "duration": 10
+        }
+      ]
+    }
+  },
+  "createdAt": "2026-07-18T21:27:30.319Z",
+  "updatedAt": "2026-07-18T23:27:30.320907598+02:00"
+}

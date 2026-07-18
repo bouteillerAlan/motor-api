@@ -20,7 +20,7 @@ import { UsersModule } from "./users/users.module";
         username: configService.get("DB_USER"),
         password: configService.get("DB_PASS"),
         database: configService.get("DB_NAME"),
-        entities: [],
+        autoLoadEntities: true, // auto load each entity present in another modules
         synchronize: process.env.NODE_ENV === "development" ? true : false,
       }),
       inject: [ConfigService],

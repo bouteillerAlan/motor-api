@@ -1,0 +1,84 @@
+{
+  "name": "DELETE@{{api_dev_url}}/users/dd48fd5c-cc01-4fb6-9820-e861570517eb",
+  "description": "",
+  "method": "DELETE",
+  "url": "{{api_dev_url}}/users/dd48fd5c-cc01-4fb6-9820-e861570517eb",
+  "headers": {},
+  "body": "",
+  "bodyType": "none",
+  "query": {},
+  "response": {
+    "statusCode": 200,
+    "status": "200 OK",
+    "headers": {
+      "Content-Length": [
+        "23"
+      ],
+      "Content-Type": [
+        "application/json; charset=utf-8"
+      ],
+      "Date": [
+        "Sat, 18 Jul 2026 21:30:54 GMT"
+      ],
+      "Etag": [
+        "W/\"17-PVQD/E0HAqMH9FRBYNXdIixTtCA\""
+      ],
+      "X-Powered-By": [
+        "Express"
+      ]
+    },
+    "cookies": null,
+    "body": "{\"raw\":[],\"affected\":1}",
+    "size": 23,
+    "duration": 17677,
+    "raw": {
+      "method": "DELETE",
+      "url": "%7B%7Bapi_dev_url%7D%7D/users/dd48fd5c-cc01-4fb6-9820-e861570517eb",
+      "headers": {},
+      "body": ""
+    },
+    "effective": {
+      "method": "DELETE",
+      "url": "http://localhost:3000/users/dd48fd5c-cc01-4fb6-9820-e861570517eb",
+      "headers": {},
+      "body": ""
+    },
+    "trace": {
+      "logs": [
+        "[21:30:54.057Z] Preparing request to http://localhost:3000/users/dd48fd5c-cc01-4fb6-9820-e861570517eb",
+        "[21:30:54.057Z] DELETE http://localhost:3000/users/dd48fd5c-cc01-4fb6-9820-e861570517eb",
+        "[21:30:54.057Z] DNS lookup: localhost",
+        "[21:30:54.057Z] DNS lookup: localhost -\u003e ::1",
+        "[21:30:54.057Z] DNS lookup: localhost -\u003e 127.0.0.1",
+        "[21:30:54.057Z] Trying [::1]:3000... (tcp)",
+        "[21:30:54.057Z] Connected to localhost ([::1]:3000)",
+        "[21:30:54.074Z] HTTP/1.1 200 OK",
+        "[21:30:54.074Z] Request completed in 17 ms"
+      ],
+      "timings": [
+        {
+          "label": "DNS Lookup",
+          "duration": 0
+        },
+        {
+          "label": "TCP Connect",
+          "duration": 0
+        },
+        {
+          "label": "Waiting (TTFB)",
+          "duration": 17
+        },
+        {
+          "label": "Transfer",
+          "duration": 0
+        },
+        {
+          "label": "Total",
+          "duration": 17
+        }
+      ]
+    }
+  },
+  "createdAt": "2026-07-18T21:30:54.075Z",
+  "updatedAt": "2026-07-18T23:30:54.07548597+02:00"
+}
