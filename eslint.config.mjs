@@ -49,4 +49,10 @@ export default tseslint.config(
       'max-len': ['error', { code: 120 }],
     },
   },
+  {
+    files: ['**/*.spec.ts'],
+    rules: {
+      '@typescript-eslint/unbound-method': 'off',
+    },
+  },
 );

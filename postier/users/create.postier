@@ -6,7 +6,7 @@
   "headers": {
     "Content-Type": "application/json"
   },
-  "body": "{\n  \"name\": \"test2\",\n  \"password\": \"testtest\"\n}",
+  "body": "{\n  \"name\": \"tesdt2\",\n  \"password\": \"testtest\"\n}",
   "bodyType": "json",
   "query": {},
   "headerEntries": [
@@ -21,32 +21,32 @@
     "status": "201 Created",
     "headers": {
       "Content-Length": [
-        "150"
+        "151"
       ],
       "Content-Type": [
         "application/json; charset=utf-8"
       ],
       "Date": [
-        "Sat, 18 Jul 2026 21:27:38 GMT"
+        "Sat, 18 Jul 2026 23:02:19 GMT"
       ],
       "Etag": [
-        "W/\"96-FXjMBrXVucOuF8YuzJSGnSsUb2g\""
+        "W/\"97-dkLPVlIAghd61bRsyJ1maizvVRA\""
       ],
       "X-Powered-By": [
         "Express"
       ]
     },
     "cookies": null,
-    "body": "{\"id\":\"dd48fd5c-cc01-4fb6-9820-e861570517eb\",\"createdAt\":\"2026-07-18T19:27:38.654Z\",\"updatedAt\":\"2026-07-18T19:27:38.654Z\",\"version\":1,\"name\":\"test2\"}",
-    "size": 150,
-    "duration": 19539,
+    "body": "{\"id\":\"646bbc58-7312-452c-be25-36259a99d6df\",\"createdAt\":\"2026-07-18T21:02:19.920Z\",\"updatedAt\":\"2026-07-18T21:02:19.920Z\",\"version\":1,\"name\":\"tesdt2\"}",
+    "size": 151,
+    "duration": 27047,
     "raw": {
       "method": "POST",
       "url": "%7B%7Bapi_dev_url%7D%7D/users",
       "headers": {
         "Content-Type": "application/json"
       },
-      "body": "{\n  \"name\": \"test2\",\n  \"password\": \"testtest\"\n}"
+      "body": "{\n  \"name\": \"tesdt2\",\n  \"password\": \"testtest\"\n}"
     },
     "effective": {
       "method": "POST",
@@ -54,19 +54,19 @@
       "headers": {
         "Content-Type": "application/json"
       },
-      "body": "{\n  \"name\": \"test2\",\n  \"password\": \"testtest\"\n}"
+      "body": "{\n  \"name\": \"tesdt2\",\n  \"password\": \"testtest\"\n}"
     },
     "trace": {
       "logs": [
-        "[21:27:38.647Z] Preparing request to http://localhost:3000/users",
-        "[21:27:38.647Z] POST http://localhost:3000/users",
-        "[21:27:38.647Z] DNS lookup: localhost",
-        "[21:27:38.647Z] DNS lookup: localhost -\u003e ::1",
-        "[21:27:38.647Z] DNS lookup: localhost -\u003e 127.0.0.1",
-        "[21:27:38.647Z] Trying [::1]:3000... (tcp)",
-        "[21:27:38.647Z] Connected to localhost ([::1]:3000)",
-        "[21:27:38.666Z] HTTP/1.1 201 Created",
-        "[21:27:38.666Z] Request completed in 19 ms"
+        "[23:02:19.906Z] Preparing request to http://localhost:3000/users",
+        "[23:02:19.906Z] POST http://localhost:3000/users",
+        "[23:02:19.906Z] DNS lookup: localhost",
+        "[23:02:19.906Z] DNS lookup: localhost -\u003e ::1",
+        "[23:02:19.906Z] DNS lookup: localhost -\u003e 127.0.0.1",
+        "[23:02:19.906Z] Trying [::1]:3000... (tcp)",
+        "[23:02:19.906Z] Connected to localhost ([::1]:3000)",
+        "[23:02:19.933Z] HTTP/1.1 201 Created",
+        "[23:02:19.933Z] Request completed in 27 ms"
       ],
       "timings": [
         {
@@ -79,7 +79,7 @@
         },
         {
           "label": "Waiting (TTFB)",
-          "duration": 19
+          "duration": 26
         },
         {
           "label": "Transfer",
@@ -87,11 +87,11 @@
         },
         {
           "label": "Total",
-          "duration": 19
+          "duration": 27
         }
       ]
     }
   },
-  "createdAt": "2026-07-18T21:27:38.667Z",
-  "updatedAt": "2026-07-18T23:27:38.667328683+02:00"
+  "createdAt": "2026-07-18T23:02:19.933Z",
+  "updatedAt": "2026-07-19T01:02:19.933996459+02:00"
 }

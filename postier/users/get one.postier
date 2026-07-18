@@ -1,8 +1,8 @@
 {
-  "name": "GET@{{api_dev_url}}/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
+  "name": "GET@{{api_dev_url}}/users/646bbc58-7312-452c-be25-36259a99d6df",
   "description": "",
   "method": "GET",
-  "url": "{{api_dev_url}}/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
+  "url": "{{api_dev_url}}/users/646bbc58-7312-452c-be25-36259a99d6df",
   "headers": {},
   "body": "",
   "bodyType": "none",
@@ -12,48 +12,48 @@
     "status": "200 OK",
     "headers": {
       "Content-Length": [
-        "149"
+        "151"
       ],
       "Content-Type": [
         "application/json; charset=utf-8"
       ],
       "Date": [
-        "Sat, 18 Jul 2026 21:27:30 GMT"
+        "Sat, 18 Jul 2026 23:09:06 GMT"
       ],
       "Etag": [
-        "W/\"95-3u1Jq2czXr64tPnNVDHdp4nNI90\""
+        "W/\"97-dkLPVlIAghd61bRsyJ1maizvVRA\""
       ],
       "X-Powered-By": [
         "Express"
       ]
     },
     "cookies": null,
-    "body": "{\"id\":\"2cd35924-2815-4cf1-b375-f7f262b398a0\",\"createdAt\":\"2026-07-18T19:15:54.844Z\",\"updatedAt\":\"2026-07-18T19:15:54.844Z\",\"version\":1,\"name\":\"test\"}",
-    "size": 149,
-    "duration": 10715,
+    "body": "{\"id\":\"646bbc58-7312-452c-be25-36259a99d6df\",\"createdAt\":\"2026-07-18T21:02:19.920Z\",\"updatedAt\":\"2026-07-18T21:02:19.920Z\",\"version\":1,\"name\":\"tesdt2\"}",
+    "size": 151,
+    "duration": 8583,
     "raw": {
       "method": "GET",
-      "url": "%7B%7Bapi_dev_url%7D%7D/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
+      "url": "%7B%7Bapi_dev_url%7D%7D/users/646bbc58-7312-452c-be25-36259a99d6df",
       "headers": {},
       "body": ""
     },
     "effective": {
       "method": "GET",
-      "url": "http://localhost:3000/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
+      "url": "http://localhost:3000/users/646bbc58-7312-452c-be25-36259a99d6df",
       "headers": {},
       "body": ""
     },
     "trace": {
       "logs": [
-        "[21:27:30.306Z] Preparing request to http://localhost:3000/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
-        "[21:27:30.306Z] GET http://localhost:3000/users/2cd35924-2815-4cf1-b375-f7f262b398a0",
-        "[21:27:30.306Z] DNS lookup: localhost",
-        "[21:27:30.306Z] DNS lookup: localhost -\u003e ::1",
-        "[21:27:30.306Z] DNS lookup: localhost -\u003e 127.0.0.1",
-        "[21:27:30.306Z] Trying [::1]:3000... (tcp)",
-        "[21:27:30.306Z] Connected to localhost ([::1]:3000)",
-        "[21:27:30.316Z] HTTP/1.1 200 OK",
-        "[21:27:30.316Z] Request completed in 10 ms"
+        "[23:09:06.202Z] Preparing request to http://localhost:3000/users/646bbc58-7312-452c-be25-36259a99d6df",
+        "[23:09:06.202Z] GET http://localhost:3000/users/646bbc58-7312-452c-be25-36259a99d6df",
+        "[23:09:06.202Z] DNS lookup: localhost",
+        "[23:09:06.202Z] DNS lookup: localhost -\u003e ::1",
+        "[23:09:06.202Z] DNS lookup: localhost -\u003e 127.0.0.1",
+        "[23:09:06.202Z] Trying [::1]:3000... (tcp)",
+        "[23:09:06.202Z] Connected to localhost ([::1]:3000)",
+        "[23:09:06.210Z] HTTP/1.1 200 OK",
+        "[23:09:06.210Z] Request completed in 8 ms"
       ],
       "timings": [
         {
@@ -66,7 +66,7 @@
         },
         {
           "label": "Waiting (TTFB)",
-          "duration": 10
+          "duration": 8
         },
         {
           "label": "Transfer",
@@ -74,11 +74,11 @@
         },
         {
           "label": "Total",
-          "duration": 10
+          "duration": 8
         }
       ]
     }
   },
-  "createdAt": "2026-07-18T21:27:30.319Z",
-  "updatedAt": "2026-07-18T23:27:30.320907598+02:00"
+  "createdAt": "2026-07-18T23:09:06.21Z",
+  "updatedAt": "2026-07-19T01:09:06.211181091+02:00"
 }

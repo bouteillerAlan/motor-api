@@ -16,7 +16,9 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/jest/bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e:up": "docker compose -f compose.test.yaml up -d",
+    "test:e2e:down": "docker compose -f compose.test.yaml down -v",
+    "test:e2e": "npm run test:e2e:up && jest --config test/jest-e2e.json --runInBand; npm run test:e2e:down"
   },
   "engines": {
     "npm": ">=10.0.0",
@@ -72,7 +74,7 @@
       "json",
       "ts"
     ],
-    "rootDir": "src",
+    "rootDir": ".",
     "testRegex": ".*\\.spec\\.ts$",
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
