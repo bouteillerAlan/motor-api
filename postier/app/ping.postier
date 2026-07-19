@@ -1,0 +1,84 @@
+{
+  "name": "GET@{{api_dev_url}}/",
+  "description": "",
+  "method": "GET",
+  "url": "{{api_dev_url}}/",
+  "headers": {},
+  "body": "",
+  "bodyType": "none",
+  "query": {},
+  "response": {
+    "statusCode": 200,
+    "status": "200 OK",
+    "headers": {
+      "Content-Length": [
+        "24"
+      ],
+      "Content-Type": [
+        "text/html; charset=utf-8"
+      ],
+      "Date": [
+        "Sun, 19 Jul 2026 01:07:02 GMT"
+      ],
+      "Etag": [
+        "W/\"18-Ye5uk8lAENnsxptJalPHL5eovy8\""
+      ],
+      "X-Powered-By": [
+        "Express"
+      ]
+    },
+    "cookies": null,
+    "body": "2026-07-19T01:07:02.785Z",
+    "size": 24,
+    "duration": 4626,
+    "raw": {
+      "method": "GET",
+      "url": "%7B%7Bapi_dev_url%7D%7D/",
+      "headers": {},
+      "body": ""
+    },
+    "effective": {
+      "method": "GET",
+      "url": "http://localhost:3000/",
+      "headers": {},
+      "body": ""
+    },
+    "trace": {
+      "logs": [
+        "[01:07:02.782Z] Preparing request to http://localhost:3000/",
+        "[01:07:02.782Z] GET http://localhost:3000/",
+        "[01:07:02.782Z] DNS lookup: localhost",
+        "[01:07:02.782Z] DNS lookup: localhost -\u003e ::1",
+        "[01:07:02.782Z] DNS lookup: localhost -\u003e 127.0.0.1",
+        "[01:07:02.782Z] Trying [::1]:3000... (tcp)",
+        "[01:07:02.782Z] Connected to localhost ([::1]:3000)",
+        "[01:07:02.786Z] HTTP/1.1 200 OK",
+        "[01:07:02.786Z] Request completed in 4 ms"
+      ],
+      "timings": [
+        {
+          "label": "DNS Lookup",
+          "duration": 0
+        },
+        {
+          "label": "TCP Connect",
+          "duration": 0
+        },
+        {
+          "label": "Waiting (TTFB)",
+          "duration": 4
+        },
+        {
+          "label": "Transfer",
+          "duration": 0
+        },
+        {
+          "label": "Total",
+          "duration": 4
+        }
+      ]
+    }
+  },
+  "createdAt": "2026-07-19T01:07:02.789Z",
+  "updatedAt": "2026-07-19T03:07:02.791312644+02:00"
+}
