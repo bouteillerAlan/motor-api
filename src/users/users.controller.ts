@@ -4,6 +4,7 @@ import { CreateUserDto } from "./dto/create-user.dto";
 import { UpdateUserDto } from "./dto/update-user.dto";
 import { UserEntity } from "./entities/user.entity";
 import { DeleteResult, UpdateResult } from "typeorm";
+import { isAValidUUIDOrThrow } from "src/utils/string";
 
 @Controller("users")
 export class UsersController {
@@ -18,18 +19,21 @@ export class UsersController {
   /* find a user by it's id */
   @Get(":id")
   findOne(@Param("id") id: string): Promise<UserEntity> {
+    isAValidUUIDOrThrow(id);
     return this.usersService.findOne(id);
   }
 
   /* update a user by it's id */
   @Patch(":id")
   update(@Param("id") id: string, @Body() updateUserDto: UpdateUserDto): Promise<UpdateResult> {
+    isAValidUUIDOrThrow(id);
     return this.usersService.update(id, updateUserDto);
   }
 
   /* delete a user by it's id */
   @Delete(":id")
   remove(@Param("id") id: string): Promise<DeleteResult> {
+    isAValidUUIDOrThrow(id);
     return this.usersService.remove(id);
   }
 }
